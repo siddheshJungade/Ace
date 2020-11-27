@@ -1,0 +1,152 @@
+header {
+    background-image:url('https://images.unsplash.com/photo-1480506132288-68f7705954bd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjF9&auto=format&fit=crop&w=1993&q=80');
+    background-repeat: no-repeat;
+    height:600px;
+    background-size: cover;
+    
+}
+body {
+    margin: 0;
+    font-family: system-ui, sans-serif;
+}
+
+.wide{
+    font-size:65px;
+    color:rgb(255, 255, 255);
+    margin-right:290px; 
+    margin-top: 20px;
+    margin-bottom:auto;
+    
+
+}
+ .side{
+    font-size:65px;
+    color:rgb(255, 255, 255);
+    margin-left:320px;
+    margin-top:-70px;
+    margin-bottom:10px;
+    
+} 
+
+  .heart {
+   
+    position: absolute;
+    margin-top:290px;
+    margin-left:700px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: pink;
+    height: 50px;
+    width: 50px;
+    transform: rotate(-45deg);
+    animation-name: beat;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+  }
+  .heart:after {
+    margin-bottom:50px;
+    background-color: pink;
+    content: "";
+    border-radius: 50%;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 0px;
+    left: 25px;
+  }
+  .heart:before {
+    margin-bottom:50px;
+    background-color: pink;
+    content: "";
+    border-radius: 50%;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: -25px;
+    left: 0px;
+  }
+
+  @keyframes backdiv {
+    50% {
+      background: #ffe6f2;
+    }
+  }
+
+  @keyframes beat {
+    0% {
+      transform: scale(1) rotate(-45deg);
+    }
+    50% {
+      transform: scale(0.6) rotate(-45deg);
+    }
+  }
+
+.s1{
+    margin-left:590px;
+}
+
+section h1{
+    font-size:45px;
+    padding-bottom: 20px;;
+}
+
+.text
+{
+        
+        width: 50%;
+        height: 150px;
+        padding: 10px 20px;
+        box-sizing: border-box;
+        border: 2px solid rgb(255, 255, 255);
+        border-radius: 3px;
+        background-color: #ffffff;
+        font-size: 16px;
+        resize: none;
+      
+        
+}
+
+
+
+input[type=text], select {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  
+
+.new:hover{
+    box-shadow: 0px 0px 20px #09f;
+}
+
+form h1{
+    padding:50px;
+}
+
+.btn{
+    background-color: #09f;
+    color: #ffffff;
+    border-radius:3px;
+    padding:10px;
+    margin-left:190px;
+}
+
+
+.sideme{
+    margin-left:50px;
+}
+
+.sideme1{
+    margin-left:370px;
+}
+
+.sideme2{
+    margin-left:370px;
+}
