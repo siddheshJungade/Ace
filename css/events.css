@@ -4,7 +4,7 @@ body {
 }
 
 header {
-  background: url("https://i.pinimg.com/originals/f5/ba/8f/f5ba8f71d7812164d2957d5f78befb67.jpg");
+  background: url("https://png.pngtree.com/thumb_back/fh260/background/20190828/pngtree-dark-vector-abstract-background-image_302715.jpg");
   height: 100%;
   width: 100%;
   background-size: cover;
@@ -41,8 +41,6 @@ header h1 {
 }
 
 @media screen and (max-width: 1092px) {
-
-
   header h1 {
     position: absolute;
     margin: 150px 10%;
