@@ -5,7 +5,6 @@ body {
 
 header {
     max-width: 100%;
-    /* position: relative; */
     color: #FFF;
     text-align: center;
     overflow: hidden;
@@ -21,10 +20,11 @@ header > svg {
 
 header nav {
     display: flex;
+    flex-wrap: wrap;
     list-style: none;
     position: relative;
-    left: 40%;
     margin-bottom: 200px;
+    float: right;
 }
 
 header nav a{
@@ -139,4 +139,16 @@ footer nav a {
     color: #fff;
     list-style-type: none;
     margin: 0 10px;
+}
+
+
+
+@media secreen and (max-width: 1024px) {
+
+}
+
+
+
+@media secreen and (max-width: 600px) {
+
 }
