@@ -1,42 +1,83 @@
 body {
-    margin: 0;
-    font-family: system-ui, sans-serif;
+  margin: 0;
+  font-family: system-ui, sans-serif;
 }
 
-
 header {
-    background: url('https://i.pinimg.com/originals/f5/ba/8f/f5ba8f71d7812164d2957d5f78befb67.jpg');
-    height: 600px;
-    background-size: cover;
+  background: url("https://i.pinimg.com/originals/f5/ba/8f/f5ba8f71d7812164d2957d5f78befb67.jpg");
+  height: 100%;
+  width: 100%;
+  background-size: cover;
 }
 
 header h1 {
-    text-align: center;
-    font-size: 50px;
-    color: antiquewhite;
+  position: absolute;
+  text-align: center;
+  font-size: 50px;
+  margin: 10% 31%;
+  color: antiquewhite;
 }
-
 
 .recent-event {
-    display: flex;
-    max-width: 85%;
-    margin: 50px auto;
+  display: flex;
+  max-width: 85%;
+  margin: 50px auto;
 }
 
-
 .recent-event img {
-    border-radius: 23px;
-    width: 45%;
+  border-radius: 23px;
+  width: 50%;
 }
 
 .recent-event .col-2 {
-    padding: 130px 80px;
-    /* border: 2px solid black; */
-    width: 40%;
-    text-align: center;
-    margin: auto;
+  padding: 130px 80px;
+  width: 40%;
+  text-align: center;
+  margin: auto;
 }
 
-.recent-event .col-2 h1{
+.recent-event .col-2 h1 {
+  font-size: 50px;
+}
+
+@media screen and (max-width: 1092px) {
+
+
+  header h1 {
+    position: absolute;
+    margin: 150px 10%;
+    text-align: center;
     font-size: 50px;
+    color: antiquewhite;
+  }
+  .recent-event {
+    display: block;
+  }
+
+  .recent-event img {
+    width: 100%;
+  }
+
+  .recent-event .col-2 {
+    padding: 0;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .col-3 {
+    display: block;
+  }
+
+  .row-2 .col-3 img {
+    width: 100%;
+  }
+
+  .card {
+    max-width: 95%;
+  }
+
+  footer nav {
+    display: block;
+  }
 }

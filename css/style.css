@@ -1,154 +1,318 @@
 body {
-    margin: 0;
-    font-family: system-ui, sans-serif;
+  margin: 0;
+  font-family: system-ui, sans-serif;
 }
 
 header {
-    max-width: 100%;
-    color: #FFF;
-    text-align: center;
-    overflow: hidden;
-    
+  max-width: 100%;
+  color: #fff;
+  text-align: center;
+  overflow: hidden; 
 }
 
 .ace-home {
-    background: linear-gradient(45deg,#0099ff,#ff00ddb2);
+  background: linear-gradient(45deg, #0099ff, #ff00ddb2);
 }
 header > svg {
-    display: block;
+  display: block;
+}
+header nav #menuToggle input {
+  display: none;
+}
+header nav #menuToggle ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  position: relative;
+  margin-bottom: 200px;
+  float: right;
 }
 
-header nav {
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    position: relative;
-    margin-bottom: 200px;
-    float: right;
-}
-
-header nav a{
-    text-decoration: none;
-    color: #fff;
-    margin: 30px;
+header nav a {
+  text-decoration: none;
+  color: #fff;
+  margin: 30px;
 }
 header nav a li {
-
 }
 
 header nav .icons a i {
-    margin: 30px 5px;
+  margin: 30px 5px;
 }
-
 
 /* SECTION */
 
 .row-1 {
-
-    display: flex;
-    margin: 40px auto;
-    max-width: 85%;
+  display: flex;
+  margin: 40px auto;
+  max-width: 85%;
 }
 
 .row-1 img {
-    border-radius: 23px;
-    width: 45%;
+  border-radius: 23px;
+  width: 45%;
 }
 
 .row-1 .col-2 {
-    margin-left: 10%;
+  margin-left: 10%;
 }
 
-
 .row-1 .col-2 h1 {
-    text-align: center;
-    font-size: 80px;
-    margin: 0px;
-    color: #0099ff;
+  text-align: center;
+  font-size: 80px;
+  margin: 0px;
+  color: #0099ff;
 }
 
 .row-1 .col-2 p {
-    font-size: 25px;
+  font-size: 25px;
+  text-align: center;
 }
 
 /* section 2 */
 
-
 h2 {
-    margin-top: 40px;
-    text-align: center;
-    font-size: 40px;
-    color: #ff0000;
-    
+  margin-top: 40px;
+  text-align: center;
+  font-size: 2em;
+  color: #ff0000;
 }
 .col-3 {
-    margin: auto;
-   max-width: 85%;
-    display: flex;
+  margin: auto;
+  max-width: 85%;
+  display: flex;
 }
 .row-2 .col-3 img {
-   width: 32%;
-   margin: auto;
-   border-radius: 5px;
+  width: 32%;
+  margin: auto;
+  border-radius: 5px;
 }
 
+/* section 3 */
 
-/* section 3 */ 
+.col-4 {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: 0 auto;
+  justify-content: center;
+}
 
 .card {
-    border-radius: 4px;
-    height: 500px;
-    background: #fff;
-    box-shadow: 0px 0 2px black;
-    margin: 10px;
-    max-width: 25%;
-    transition: 1s, background 0.1s;
+  border-radius: 4px;
+  height: 550px;
+  background: #fff;
+  box-shadow: 0px 0 2px black;
+  margin: 10px;
+  max-width: 23%;
+  transition: 1s, background 0.1s;
 }
 
-.card:hover{
-    box-shadow: 0px 0px 20px #09f;
+.card:hover {
+  box-shadow: 0px 0px 20px #09f;
 }
-
 
 .card img {
-    width: 50%;
-    margin: 50px 25%;
-    border-radius: 50%;
+  width: 50%;
+  margin: 50px 25%;
+  border-radius: 50%;
 }
 
 .card p {
-    max-width: 85%;
-    margin: 0px auto 50px;
-    text-align: center;
+  max-width: 85%;
+  margin: 0px auto 50px;
+  text-align: center;
 }
 
 .card h3 {
-    text-align: center;
+  text-align: center;
 }
 /* footer */
 footer {
-    background:black;
-    margin-top: 30px;
+  background: black;
+  margin-top: 30px;
 }
 footer nav {
-    display: flex;
-    padding: 20px;
+  display: flex;
+  padding: 20px;
 }
 footer nav a {
+  color: #fff;
+  list-style-type: none;
+  margin: 0 10px;
+}
 
-    color: #fff;
+@media screen and (max-width: 1092px) {
+  /* header */
+  header nav #menuToggle input {
+    display: block;
+  }
+  #menuToggle {
+    display: block;
+    position: relative;
+    top: 50px;
+    left: 50px;
+
+    z-index: 1;
+
+    -webkit-user-select: none;
+    user-select: none;
+  }
+
+  #menuToggle a {
+    text-decoration: none;
+    color: #232323;
+
+    transition: color 0.3s ease;
+  }
+
+  #menuToggle a:hover {
+    color: tomato;
+  }
+
+  #menuToggle input {
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+
+    cursor: pointer;
+
+    opacity: 0; /* hide this */
+    z-index: 2; /* and place it over the hamburger */
+
+    -webkit-touch-callout: none;
+  }
+
+  /*
+ * Just a quick hamburger
+ */
+  #menuToggle span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+
+    background: #cdcdcd;
+    border-radius: 3px;
+
+    z-index: 1;
+
+    transform-origin: 4px 0px;
+
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+      background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+  }
+
+  #menuToggle span:first-child {
+    transform-origin: 0% 0%;
+  }
+
+  #menuToggle span:nth-last-child(2) {
+    transform-origin: 0% 100%;
+  }
+
+  /* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+  #menuToggle input:checked ~ span {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: #232323;
+  }
+
+  /*
+ * But let's hide the middle one.
+ */
+  #menuToggle input:checked ~ span:nth-last-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+  }
+
+  /*
+ * Ohyeah and the last one should go the other direction
+ */
+  #menuToggle input:checked ~ span:nth-last-child(2) {
+    transform: rotate(-45deg) translate(0, -1px);
+  }
+
+  /*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+  #menu {
+    position: absolute;
+    width: 100%;
+    margin: -100px 0 0 -50px;
+    padding: 30px;
+    padding-top: 125px;
+    
+    background: #ededed;
     list-style-type: none;
-    margin: 0 10px;
+    -webkit-font-smoothing: antialiased;
+    /* to stop flickering of text in safari */
+    
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+    
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+  }
+  header nav #menuToggle ul{
+      display: block;
+      font-size: 22px;
+      text-align: left;
+  }
+  header nav #menuToggle ul a li {
+      margin-left: 40px;
+  }
+
+  /*
+ * And let's slide it in from the left
+ */
+  #menuToggle input:checked ~ ul {
+    transform: none;
+  }
+
+  /* section 1 */
+  .row-1 {
+    display: block;
+  }
+  .row-1 img {
+    width: 100%;
+  }
+
+  .row-1 .col-2 {
+    margin-left: 0;
+  }
+  .row-1 .col-2 h1 {
+    font-size: 4em;
+  }
+
+  /* section 2 */
+
+  .card {
+    max-width: 45%;
+  }
 }
 
+@media screen and (max-width: 600px) {
+  .col-3 {
+    display: block;
+  }
 
+  .row-2 .col-3 img {
+    width: 100%;
+  }
 
-@media secreen and (max-width: 1024px) {
+  .card {
+    max-width: 95%;
+  }
 
-}
-
-
-
-@media secreen and (max-width: 600px) {
-
+  footer nav {
+    display: block;
+  }
 }
