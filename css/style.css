@@ -16,6 +16,15 @@ header {
 header > svg {
   display: block;
 }
+header nav {
+  display: flex;
+  justify-content: space-between;
+}
+.logo img{
+  margin: 0 20px;
+  height: 120px;
+  width: 170px;
+}
 header nav #menuToggle input {
   display: none;
 }
@@ -143,6 +152,16 @@ footer nav a {
 }
 
 @media screen and (max-width: 1092px) {
+
+  header nav{
+    display: block;
+  }
+  header nav .logo img {
+    position: absolute;
+    height: 15rem;
+    width: 20rem;
+    margin: 150px 35%;
+  }
   /* header */
   header nav #menuToggle input {
     display: block;
@@ -176,7 +195,7 @@ footer nav a {
     height: 32px;
     position: absolute;
     top: -7px;
-    left: -5px;
+    left: -10px;
 
     cursor: pointer;
 
@@ -300,6 +319,18 @@ footer nav a {
 }
 
 @media screen and (max-width: 600px) {
+  header{
+    max-height: 100vh;
+  }
+  header nav{
+    display: block;
+  }
+  header nav .logo img {
+    position: absolute;
+    height: 10rem;
+    width: 15rem;
+    margin: 150px 20%;
+  }
   .col-3 {
     display: block;
   }
